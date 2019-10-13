@@ -5,32 +5,53 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
-public class MyShopArrayAdapter extends ArrayAdapter {
+public class MyShopArrayAdapter extends BaseAdapter {
     private Context mContext;
-    private String[] mShop;
-    private String[] mSell;
+     int[] images;
+   String[] Products;
 
-
-    public MyShopArrayAdapter(@NonNull Context context, int resource, String[] mShop, String[] mSell) {
-        super(context, resource);
+    public MyShopArrayAdapter(Context mContext, int simple_list_item_1, int[] images, String[] products) {
         this.mContext = mContext;
-        this.mShop = mShop;
-        this.mSell = mSell;
+        this.images = images;
+
+        this.Products = products;
     }
 
     @Override
-    public Object getItem(int X) {
-        String shop = mShop[X];
-        String sell = mSell[X];
-        return String.format("%s \nServes great: %s", shop, sell);
+    public Object getItem(int position) {
+        int image = images[position];
+        String Product = Products[position];
+        return String.format("%s  %s", image, Product);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        LayoutInflater getLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = getLayoutInflater.inflate(R.layout.userlayout,null);
+        ImageView pictures =(ImageView) view.findViewById(R.id.imageView2);
+        TextView sales = (TextView) view.findViewById(R.id.textView);
+        pictures.setImageResource(images[position]);
+        sales.setText(Products[position]);
+        return view;
     }
 
     @Override
     public int getCount() {
-        return mShop.length;
+        return images.length;
     }
 }

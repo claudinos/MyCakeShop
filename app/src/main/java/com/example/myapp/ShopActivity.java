@@ -3,9 +3,12 @@ package com.example.myapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,8 +22,8 @@ public class ShopActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
     @BindView(R.id.listView) ListView mListView;
 
-    private String[] shop = new String[] {"weeding", "birthday", "simple cake", "cake" };
-    private String[] sell = new String[] {"weeding cake", "Breakfast", "birthday cake", "cake"};
+  int[] images = {R.drawable.wed5,R.drawable.ca1,R.drawable.cake1,R.drawable.ca7};
+  String[] Products = {"weeding cake", "Breakfast cake", "birthday cake", "cake"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +31,17 @@ public class ShopActivity extends AppCompatActivity {
         setContentView(R.layout.activity_shop);
         ButterKnife.bind(this);
 
-        Intent intent = getIntent();
-        MyShopArrayAdapter adapter = new MyShopArrayAdapter(this, android.R.layout.simple_list_item_1, shop, sell);
-        mListView.setAdapter(adapter);
-    }
 
+        MyShopArrayAdapter adapter = new MyShopArrayAdapter(this, android.R.layout.simple_list_item_1, images, Products);
+        mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent main = new Intent(ShopActivity.this, MainActivity.class);
+                startActivity(main);
+            }
+        });
+        Intent intent = getIntent();
+    }
 }
