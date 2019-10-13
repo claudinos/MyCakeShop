@@ -18,7 +18,6 @@ public class MyShopArrayAdapter extends BaseAdapter {
     public MyShopArrayAdapter(Context mContext, int simple_list_item_1, int[] images, String[] products) {
         this.mContext = mContext;
         this.images = images;
-
         this.Products = products;
     }
 
@@ -38,7 +37,7 @@ public class MyShopArrayAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater getLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = getLayoutInflater.inflate(R.layout.userlayout,null);
-        ImageView pictures =(ImageView) view.findViewById(R.id.imageView2);
+//        ImageView pictures =(ImageView) view.findViewById(R.id.imageView2);
         TextView sales = (TextView) view.findViewById(R.id.textView);
 //        pictures.setImageResource(images[position]);
         sales.setText(Products[position]);
