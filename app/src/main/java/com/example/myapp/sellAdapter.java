@@ -25,9 +25,9 @@ public class sellAdapter extends BaseAdapter{
 
     @Override
     public Object getItem(int position) {
-        int image = bread[position];
-        String Product = cake[position];
-        return String.format("%s  %s", Product, cake);
+        int chocolate = bread[position];
+        String birth = cake[position];
+        return String.format("%s  %s", chocolate, birth);
 
     }
 
