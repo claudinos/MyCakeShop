@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SellActivity">
+    tools:context=".sellActivity">
 
     <TextView
         android:text="Our Products"
@@ -14,29 +14,25 @@
         android:layout_marginTop="12dp"
         android:layout_centerHorizontal="true"
         android:textSize="20sp" />
-    <TextView
-        android:text=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/toast"
-        android:textSize="10sp" />
+
     <GridView
         android:id="@+id/myGrid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:numColumns="2"
-        android:layout_marginTop="60dp"
+        android:numColumns="3"
+        android:layout_marginTop="80dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="45dp"/>
+
     <Button
         android:id="@+id/shop"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
-        android:background="@color/colorAccent"
-        android:text="shop "
+        android:background="@color/silver"
+        android:text="Buy "
         android:textColor="@color/colorPrimary" />
 
 

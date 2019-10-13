@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SellActivity"></activity>
+        <activity android:name=".sellActivity"></activity>
+        <activity android:name=".SellActivity" />
         <activity android:name=".ShopActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.myapp.MainActivity"></meta-data>
+                android:value="com.example.myapp.MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

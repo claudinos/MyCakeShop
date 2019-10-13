@@ -38,7 +38,7 @@ public class ShopActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent main = new Intent(ShopActivity.this, MainActivity.class);
+                Intent main = new Intent(ShopActivity.this, sellActivity.class);
                 startActivity(main);
             }
         });
