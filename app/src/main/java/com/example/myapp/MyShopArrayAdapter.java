@@ -45,7 +45,7 @@ public class MyShopArrayAdapter extends BaseAdapter {
         View view = getLayoutInflater.inflate(R.layout.userlayout,null);
         ImageView pictures =(ImageView) view.findViewById(R.id.imageView2);
         TextView sales = (TextView) view.findViewById(R.id.textView);
-        pictures.setImageResource(images[position]);
+//        pictures.setImageResource(images[position]);
         sales.setText(Products[position]);
         return view;
     }
