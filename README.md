@@ -4,7 +4,7 @@
 
 ## Description
 
-This application allows user to discover our products and buy it online or give the own the reservation of cake or a command .
+This application allows user to discover our products and buy it online or give the own the reservation of cake or a command but you could not use it because I still work on it .
 
 ## SETUP INSTALLATION REQUIRED
     *UBUNTU
