@@ -16,3 +16,8 @@ This application allows user to discover our products and buy it online or give 
     *NETWORK connection
 
 
+## Support and contact details
+contact us on claudinos1990@gmail.com.
+
+
+
