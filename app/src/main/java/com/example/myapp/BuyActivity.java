@@ -29,7 +29,7 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View mBuy) {
         String x = mEdit.getText().toString();
-        Toast.makeText(BuyActivity.this, "Your reservation received! you will take your cake at ", Toast.LENGTH_LONG).show();
+        Toast.makeText(BuyActivity.this, "Received,Choice the cake ", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(BuyActivity.this, sellActivity.class);
         intent.putExtra("x", x);
         startActivity(intent);
