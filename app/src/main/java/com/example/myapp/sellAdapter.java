@@ -25,9 +25,7 @@ public class sellAdapter extends BaseAdapter{
 
     @Override
     public Object getItem(int position) {
-        int chocolate = bread[position];
-        String birth = cake[position];
-        return String.format("%s  %s", chocolate, birth);
+      return null;
 
     }
 

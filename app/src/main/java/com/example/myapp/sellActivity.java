@@ -15,7 +15,7 @@ public class sellActivity extends AppCompatActivity {
 
     GridView gridView;
 
-    int [] picture = { R.drawable.cake1, R.drawable.cake2, R.drawable.ca1, R.drawable.cake4, R.drawable.wed5, R.drawable.wed3,};
+    private int [] picture = { R.drawable.cake1, R.drawable.cake2, R.drawable.ca1, R.drawable.cake4, R.drawable.wed5, R.drawable.wed3,};
     String []  prices =new String[] {"cake1:$7", "cake2:$8", "cake3:$10", "cake4:$12", "cake5:$12", "cake6:$13"};
 
     @Override
@@ -23,8 +23,13 @@ public class sellActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell);
         ButterKnife.bind(this);
+
+        Intent intent = getIntent();
+//        String location = intent.getStringExtra("location");
+
         gridView = (GridView) findViewById(R.id.myGrid);
         gridView.setAdapter(new sellAdapter(this, picture,prices));
+
         mshop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

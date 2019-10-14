@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/aliceblue">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="250dp"
+            android:background="@color/aliceblue"
+            android:hint="Time to pick your cake"
+            android:padding="8dp"
+            android:textColor="@color/colorPrimaryDark" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/grid"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/wed2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Fill the time you will come to pick your cake"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/aliceblue"
+        android:id="@+id/title"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/buy"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/aliceblue"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"/>
+
+
+
+</RelativeLayout>

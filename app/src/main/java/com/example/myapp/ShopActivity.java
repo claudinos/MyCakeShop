@@ -1,20 +1,10 @@
 package com.example.myapp;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -38,10 +28,12 @@ public class ShopActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent main = new Intent(ShopActivity.this, sellActivity.class);
+                Intent main = new Intent(ShopActivity.this, BuyActivity.class);
                 startActivity(main);
             }
         });
         Intent intent = getIntent();
+
+
     }
 }
