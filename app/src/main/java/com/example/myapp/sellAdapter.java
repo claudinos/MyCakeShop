@@ -20,7 +20,7 @@ public class sellAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return 0;
+        return cake.length;
     }
 
     @Override
@@ -41,12 +41,12 @@ public class sellAdapter extends BaseAdapter{
 
         LayoutInflater inflater = (LayoutInflater) vanilla
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View gridView = convertView;
+        View grid = convertView;
         if (convertView == null) {
-            gridView = inflater.inflate(R.layout.grid,null);
+            grid = inflater.inflate(R.layout.grid,null);
         }
-        ImageView images = (ImageView)gridView.findViewById(R.id.imageView2);
-        images.setImageResource(bread[position]);
-        return images;
+        ImageView pic = (ImageView)grid.findViewById(R.id.grid);
+        pic.setImageResource(bread[position]);
+        return pic;
     }
 }

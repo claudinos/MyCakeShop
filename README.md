@@ -15,6 +15,10 @@ This application allows user to discover our products and buy it online or give 
     *Android
     *NETWORK connection
 
+ ## BUGS
+
+ I tried to use Grid but I fail but I will continue working on it
+
 
 ## Support and contact details
 contact us on claudinos1990@gmail.com.

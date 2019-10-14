@@ -18,10 +18,10 @@
         android:id="@+id/myGrid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:numColumns="3"
         android:layout_marginTop="80dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="45dp"/>
+        android:layout_marginBottom="45dp"
+        android:numColumns="2"/>
 
     <Button
         android:id="@+id/shop"
@@ -33,6 +33,5 @@
         android:background="@color/silver"
         android:text="Buy "
         android:textColor="@color/colorPrimary" />
-
 
 </RelativeLayout>
