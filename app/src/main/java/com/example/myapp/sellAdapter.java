@@ -20,7 +20,7 @@ public class sellAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return cake.length;
+        return 0;
     }
 
     @Override
