@@ -23,7 +23,6 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.activity_buy);
         ButterKnife.bind(this);
         mBuy.setOnClickListener(this);
-
     }
 
     @Override
@@ -35,6 +34,4 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
         startActivity(intent);
 
     }
-
-
 }
