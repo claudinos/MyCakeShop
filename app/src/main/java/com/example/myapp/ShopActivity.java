@@ -33,7 +33,5 @@ public class ShopActivity extends AppCompatActivity {
             }
         });
         Intent intent = getIntent();
-
-
     }
 }
