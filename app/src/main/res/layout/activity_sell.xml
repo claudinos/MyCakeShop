@@ -32,5 +32,4 @@
         android:background="@color/silver"
         android:text="Buy "
         android:textColor="@color/colorPrimary" />
-
 </RelativeLayout>
