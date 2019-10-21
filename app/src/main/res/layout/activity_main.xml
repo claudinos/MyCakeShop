@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
 
     <ImageView
@@ -35,6 +35,17 @@
         android:gravity="center_horizontal"
         android:layout_marginTop="300dp"/>
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationEditText"
+        android:background="@color/aliceblue"
+        android:layout_above="@+id/startButton"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:hint="location"
+        android:layout_centerHorizontal="true" />
+
     <Button
         android:id="@+id/startButton"
         android:layout_width="150dp"
@@ -43,7 +54,9 @@
         android:layout_marginStart="130dp"
         android:layout_marginBottom="37dp"
         android:background="@color/aliceblue"
-        android:text="Discover our Products"
+        android:text="Enjoy"
         android:textColor="@color/colorPrimary" />
+
+
 
 </RelativeLayout>

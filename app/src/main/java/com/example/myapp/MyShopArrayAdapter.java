@@ -12,10 +12,10 @@ import java.util.List;
 
 public class MyShopArrayAdapter extends BaseAdapter {
     private Context mContext;
-     int[] images;
+     String[] images;
    String[] Products;
 
-    public MyShopArrayAdapter(Context mContext, int simple_list_item_1, int[] images, String[] products) {
+    public MyShopArrayAdapter(Context mContext, int simple_list_item_1, String[] images, String[] products) {
         this.mContext = mContext;
         this.images = images;
         this.Products = products;
@@ -23,7 +23,7 @@ public class MyShopArrayAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        int image = images[position];
+        String image = images[position];
         String Product = Products[position];
         return String.format("%s  %s", image, Product);
     }

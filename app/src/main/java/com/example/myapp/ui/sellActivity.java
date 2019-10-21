@@ -1,4 +1,4 @@
-package com.example.myapp;
+package com.example.myapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+
+import com.example.myapp.R;
+import com.example.myapp.sellAdapter;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 public class sellActivity extends AppCompatActivity {

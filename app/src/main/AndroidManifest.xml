@@ -9,30 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BuyActivity">
+        <activity android:name=".ui.ShopDetailActivity"></activity>
+        <activity android:name=".ui.BuyActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.myapp.ShopActivity">
-
-            </meta-data>
-
+                android:value="com.example.myapp.ui.ShopActivity"></meta-data>
         </activity>
-        <activity android:name=".sellActivity">
+        <activity android:name=".ui.sellActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.myapp.BuyActivity">
-
-            </meta-data>
+                android:value="com.example.myapp.ui.BuyActivity"></meta-data>
         </activity>
-
-        <activity android:name=".ShopActivity">
+        <activity android:name=".ui.ShopActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.myapp.MainActivity">
-
-            </meta-data>
+                android:value="com.example.myapp.ui.MainActivity"></meta-data>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,5 +33,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
