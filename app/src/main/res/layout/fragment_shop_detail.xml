@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Restaurant Name"
+                android:text="Shop Name"
                 android:id="@+id/restaurantNameTextView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -88,7 +88,6 @@
                     android:layout_height="wrap_content"
                     android:text="View on Yelp"
                     android:id="@+id/websiteTextView"
-                    android:drawableLeft="@drawable/ca2"
                     android:drawablePadding="4dp"
                     android:textColor="@color/aliceblue"
                     android:textSize="15sp"
@@ -127,7 +126,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Save Restaurant"
+                android:text="Save cake"
                 android:id="@+id/saveRestaurantButton"
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorAccent"

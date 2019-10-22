@@ -46,12 +46,12 @@ public class ShopDetailFragment extends Fragment implements View.OnClickListener
     public ShopDetailFragment() {
         // Required empty public constructor
     }
-    public static ShopDetailFragment newInstance(Business restaurant) {
-        ShopDetailFragment restaurantDetailFragment = new ShopDetailFragment();
+    public static ShopDetailFragment newInstance(Business shop) {
+        ShopDetailFragment shopDetailFragment = new ShopDetailFragment();
         Bundle args = new Bundle();
-        args.putParcelable("cake", Parcels.wrap(restaurant));
-        restaurantDetailFragment.setArguments(args);
-        return restaurantDetailFragment;
+        args.putParcelable("cake", Parcels.wrap(shop));
+        shopDetailFragment.setArguments(args);
+        return shopDetailFragment;
     }
 
     @Override

@@ -12,9 +12,9 @@ import java.util.List;
 public class ShopPagerAdapter extends FragmentPagerAdapter {
     private List<Business> shops;
 
-    public ShopPagerAdapter(FragmentManager fm, int behavior, List<Business> restaurants) {
+    public ShopPagerAdapter(FragmentManager fm, int behavior, List<Business> shop) {
         super(fm, behavior);
-        shops = restaurants;
+        shops = shop;
     }
 
     @Override

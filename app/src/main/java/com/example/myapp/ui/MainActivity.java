@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v == mStartButton) {
+            String location = mLocationEditText.getText().toString();
             Intent intent = new Intent(MainActivity.this, ShopActivity.class);
+            intent.putExtra("location", location);
             startActivity(intent);
         }
     }
