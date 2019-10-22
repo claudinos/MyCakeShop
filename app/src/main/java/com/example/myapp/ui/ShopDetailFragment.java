@@ -73,7 +73,6 @@ public class ShopDetailFragment extends Fragment implements View.OnClickListener
         for (Category category: mShop.getCategories()) {
             categories.add(category.getTitle());
 
-
         }
         mPhoneLabel.setOnClickListener(this);
         mAddressLabel.setOnClickListener(this);
