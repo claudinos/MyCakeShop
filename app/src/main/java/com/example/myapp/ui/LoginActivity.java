@@ -95,10 +95,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         mAuthProgressDialog.show();
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 mAuthProgressDialog.dismiss();
                 Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
+                Toast.makeText(LoginActivity.this, "Authentication failed.", Toast.LENGTH_LONG).show();
                 if(!task.isSuccessful()){
                     Log.w(TAG, "signInWithEmail", task.getException());
                     Toast.makeText(LoginActivity.this, "Authentication failed.", Toast.LENGTH_LONG).show();
@@ -107,11 +109,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
-//    @Override
-//    public void onStart(){
-//        super.onStart();
-//        mAuth.addAuthStateListener(mAuthListener);
-//    }
+    @Override
+    public void onStart(){
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+    }
 
     @Override
     public void onStop() {
