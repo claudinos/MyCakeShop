@@ -107,11 +107,11 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             }
         };
     }
-//    @Override
-//    public void onStart(){
-//        super.onStart();
-//        mAuth.addAuthStateListener(mAuthListener);
-//    }
+    @Override
+    public void onStart(){
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+    }
     @Override
     public void onStop(){
         super.onStop();
