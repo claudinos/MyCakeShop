@@ -42,9 +42,6 @@ public class ShopActivity extends AppCompatActivity {
     public List<Business> cakes;
 
 
-//
-//    int[] images = {R.drawable.wed5,R.drawable.ca1,R.drawable.cake1,R.drawable.ca7};
-//  String[] Products = {"weeding cake", "Breakfast cake", "birthday cake", "cake"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +61,6 @@ public class ShopActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Cakes> call, Response<Cakes> response) {
                 hideProgressBar();
-
                 if (response.isSuccessful()) {
                     cakes = response.body().getBusinesses();
                     mAdapter = new ShopListAdapter(ShopActivity.this, cakes);

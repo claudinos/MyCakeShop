@@ -15,8 +15,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.startButton) Button mStartButton;
-    @BindView(R.id.locationEditText)
-    EditText mLocationEditText;
+    @BindView(R.id.locationEditText) EditText mLocationEditText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
