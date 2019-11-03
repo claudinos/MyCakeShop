@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img1" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40sp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="75dp"
+        android:text="Get your cake any Time, We work 24/7"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="240dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/welcome"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="243dp"
+        android:shadowRadius="70"
+        android:text="SHOP"
+        android:textAlignment="center" />
+    
+</RelativeLayout>
