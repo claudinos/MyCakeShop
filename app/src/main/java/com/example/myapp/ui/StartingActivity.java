@@ -21,7 +21,6 @@ public class StartingActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting);
         ButterKnife.bind(this);
-
         startAnimation.setOnClickListener(this);
 
     }
