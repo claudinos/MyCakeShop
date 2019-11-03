@@ -11,6 +11,17 @@
         android:layout_height="match_parent"
         android:background="@color/aliceblue">
 
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="300dp"
+            android:background="@color/aliceblue"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
+
         <EditText
             android:id="@+id/edit"
             android:layout_width="250dp"
@@ -21,6 +32,17 @@
             android:hint="Time to pick your cake"
             android:padding="8dp"
             android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="220dp"
+            android:background="@color/aliceblue"
+            android:text="Fill the time you will come to pick your cake"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark" />
     </FrameLayout>
 
     <ImageView
@@ -30,29 +52,6 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/wed2" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Fill the time you will come to pick your cake"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="220dp"
-        android:background="@color/aliceblue"
-        android:id="@+id/title"/>
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:id="@+id/buy"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/aliceblue"
-        android:textAlignment="center"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="300dp"/>
-
 
 
 </RelativeLayout>

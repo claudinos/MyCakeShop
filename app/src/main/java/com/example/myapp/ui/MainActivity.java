@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -37,8 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, ShopActivity.class);
             intent.putExtra("location", location);
             startActivity(intent);
+            Animation bounce = AnimationUtils.loadAnimation(this,R.anim.blink_anim);
+            mStartButton.startAnimation(bounce);
         }
-    }
+        }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

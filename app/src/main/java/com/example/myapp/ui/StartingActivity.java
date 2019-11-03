@@ -29,7 +29,7 @@ public class StartingActivity extends AppCompatActivity implements View.OnClickL
         if (v==startAnimation){
             Intent intent = new Intent(StartingActivity.this,LoginActivity.class);
             startActivity(intent);
-            Animation bounce = AnimationUtils.loadAnimation(this,R.anim.blink_anim);
+            Animation bounce = AnimationUtils.loadAnimation(this,R.anim.mixed);
             startAnimation.startAnimation(bounce);
         }
     }
